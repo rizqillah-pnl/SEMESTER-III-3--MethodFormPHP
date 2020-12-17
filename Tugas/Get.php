@@ -1,8 +1,8 @@
 <?php
 
+
 $name = $_GET['name'];
 $password = $_GET['password'];
-$gender = $_GET['gender'];
 $color = $_GET['color'];
 $date = $_GET['date'];
 $dtlocal = $_GET['dtlocal'];
@@ -16,31 +16,6 @@ $tel = $_GET['tel'];
 $time = $_GET['time'];
 $url = $_GET['url'];
 $week = $_GET['week'];
-$jenis = $_GET['jenis'];
-$image = $_GET['image'];
-
-
-
-
-
-echo "Username adalah = " . $name;
-echo "<br/>Password adalah = " . $password;
-echo "<br/>Jenis kelamin = " . $gender;
-echo "<br/>Checkbox anda = " . $jenis;
-echo "<br/>Warna inputan anda = " . $color;
-echo "<br/>Tanggal = " . $date;
-echo "<br/>Tanggal Local = " . $dtlocal;
-echo "<br/>Email anda adalah = " . $email;
-echo "<br/>File anda = " . $file;
-echo "<br/>Teks dalam hidden adalah = " . $hidden;
-echo "<br/>Gambar masukan anda = " . $image;
-echo "<br/>Inputan bulan = " . $month;
-echo "<br/>Range yang dimasukkan = " . $range;
-echo "<br/>Pencarian anda = " . $search;
-echo "<br/>Input Tel anda = " . $tel;
-echo "<br/>Inputan Waktu anda = " . $time;
-echo "<br/>Link yang anda input = " . $url;
-echo "<br/>Minggu Inputan anda = " . $week;
 
 
 
@@ -50,38 +25,41 @@ echo "<br/>Minggu Inputan anda = " . $week;
 
 
 
+echo "<b>Username adalah = </b>" . $name;
+echo "<br/><b>Password adalah = </b>" . $password;
+
+if (isset($_GET['gender'])) {
+
+  $gender = $_GET['gender'];
+  echo "<br>" . $gender;
+}
+
+
+if (isset($_GET['jenis'])) {
+  $jenis = $_GET['jenis'];
+  echo "<br>";
+  echo "<b>Pilihan Checkbox anda adalah :</b> <br>";
+
+  for ($i = 0; $i < count($jenis); $i++) {
+    echo $jenis[$i] . "<br>";
+  }
+}
 
 
 
+echo "<br/><b>Warna inputan anda = </b>" . $color;
+echo "<br/><b>Tanggal = </b>" . $date;
+echo "<br/><b>Tanggal Local = </b>" . $dtlocal;
+echo "<br/><b>Email anda adalah = </b>" . $email;
+echo "<br/><b>File anda = </b>" . $file;
+echo "<br/><b>Teks dalam hidden adalah = </b>" . $hidden;
 
+//gambar disini
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+echo "<br/><b>Inputan bulan = </b>" . $month;
+echo "<br/><b>Range yang dimasukkan = </b>" . $range;
+echo "<br/><b>Pencarian anda = </b>" . $search;
+echo "<br/><b>Input Tel anda = </b>" . $tel;
+echo "<br/><b>Inputan Waktu anda = </b>" . $time;
+echo "<br/><b>Link yang anda input = </b>" . $url;
+echo "<br/><b>Minggu Inputan anda = </b>" . $week;
