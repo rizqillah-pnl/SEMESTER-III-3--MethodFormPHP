@@ -1,33 +1,29 @@
-<!DOCTYPE html>
-<html>
+<?php
 
-<head>
-  <title>Method Get</title>
-</head>
-
-<body>
-  <form action="Get.php">
-    <label for="name">Username:</label><br>
-    <input type="text" id="name" name="name"><br><br>
-    <label for="password">Password:</label><br>
-    <input type="password" id="password" name="password"><br><br>
-    <input type="radio" id="male" name="gender" value="male">
-    <label for="male">Male</label><br>
-    <input type="radio" id="female" name="gender" value="female">
-    <label for="female">Female</label><br><br>
-    <input type="submit" value="Submit">
-    <input type="reset" value="Reset">
-  </form>
-
+$name = $_GET['name'];
+$password = $_GET['password'];
+$gender = $_GET['gender'];
+$color = $_GET['color'];
+$date = $_GET['date'];
+$dtlocal = $_GET['dtlocal'];
+$email = $_GET['email'];
+$file = $_GET['file'];
+$hidden = $_GET['hidden'];
+$image = $_POST['image'];
+$month = $_GET['month'];
+$range = $_GET['range'];
+$search = $_GET['search'];
+$tel = $_GET['tel'];
+$time = $_GET['time'];
+$url = $_GET['url'];
+$week = $_GET['week'];
 
 
 
 
-  <?php
-  $nama = 'Rizqillah';
-  ?>
 
+echo "Username adalah = " . $name;
+echo "<br/>Password adalah = " . $password;
+echo "<br/>Jenis kelamin = " . $gender;
 
-</body>
-
-</html>
+echo "<br/>Gambar = " . $image;
