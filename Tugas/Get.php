@@ -17,6 +17,7 @@ $time = $_GET['time'];
 $url = $_GET['url'];
 $week = $_GET['week'];
 $jenis = $_GET['jenis'];
+$image = $_GET['image'];
 
 
 
@@ -25,11 +26,62 @@ $jenis = $_GET['jenis'];
 echo "Username adalah = " . $name;
 echo "<br/>Password adalah = " . $password;
 echo "<br/>Jenis kelamin = " . $gender;
-echo "<br/>Jenis adalah = " . $jenis;
-echo "<br/>Gambar = " . $color;
+echo "<br/>Checkbox anda = " . $jenis;
+echo "<br/>Warna inputan anda = " . $color;
 echo "<br/>Tanggal = " . $date;
 echo "<br/>Tanggal Local = " . $dtlocal;
 echo "<br/>Email anda adalah = " . $email;
 echo "<br/>File anda = " . $file;
 echo "<br/>Teks dalam hidden adalah = " . $hidden;
+echo "<br/>Gambar masukan anda = " . $image;
 echo "<br/>Inputan bulan = " . $month;
+echo "<br/>Range yang dimasukkan = " . $range;
+echo "<br/>Pencarian anda = " . $search;
+echo "<br/>Input Tel anda = " . $tel;
+echo "<br/>Inputan Waktu anda = " . $time;
+echo "<br/>Link yang anda input = " . $url;
+echo "<br/>Minggu Inputan anda = " . $week;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
