@@ -1,33 +1,33 @@
 <?php
-$name = $_GET['name'];
-$password = $_GET['password'];
-$color = $_GET['color'];
-$date = $_GET['date'];
-$dtlocal = $_GET['dtlocal'];
-$email = $_GET['email'];
-$file = $_GET['file'];
-$hidden = $_GET['hidden'];
-$month = $_GET['month'];
-$range = $_GET['range'];
-$search = $_GET['search'];
-$tel = $_GET['tel'];
-$time = $_GET['time'];
-$url = $_GET['url'];
-$week = $_GET['week'];
+$name = $_REQUEST['name'];
+$password = $_REQUEST['password'];
+$color = $_REQUEST['color'];
+$date = $_REQUEST['date'];
+$dtlocal = $_REQUEST['dtlocal'];
+$email = $_REQUEST['email'];
+$file = $_REQUEST['file'];
+$hidden = $_REQUEST['hidden'];
+$month = $_REQUEST['month'];
+$range = $_REQUEST['range'];
+$search = $_REQUEST['search'];
+$tel = $_REQUEST['tel'];
+$time = $_REQUEST['time'];
+$url = $_REQUEST['url'];
+$week = $_REQUEST['week'];
 
 
 echo "<b>Username adalah = </b>" . $name;
 echo "<br/><b>Password adalah = </b>" . $password;
 
-if (isset($_GET['gender'])) {
+if (isset($_REQUEST['gender'])) {
 
-  $gender = $_GET['gender'];
+  $gender = $_REQUEST['gender'];
   echo "<br><b>Jenis Kelamin = </b>" . $gender;
 }
 
 
-if (isset($_GET['jenis'])) {
-  $jenis = $_GET['jenis'];
+if (isset($_REQUEST['jenis'])) {
+  $jenis = $_REQUEST['jenis'];
   echo "<br>";
   echo "<b>Pilihan Checkbox anda adalah :</b> <br>";
 
@@ -44,9 +44,6 @@ echo "<br/><b>Tanggal Local = </b>" . $dtlocal;
 echo "<br/><b>Email anda adalah = </b>" . $email;
 echo "<br/><b>File anda = </b>" . $file;
 echo "<br/><b>Teks dalam hidden adalah = </b>" . $hidden;
-
-//gambar disini
-
 echo "<br/><b>Inputan bulan = </b>" . $month;
 echo "<br/><b>Range yang dimasukkan = </b>" . $range;
 echo "<br/><b>Pencarian anda = </b>" . $search;

@@ -1,33 +1,33 @@
 <?php
-$name = $_GET['name'];
-$password = $_GET['password'];
-$color = $_GET['color'];
-$date = $_GET['date'];
-$dtlocal = $_GET['dtlocal'];
-$email = $_GET['email'];
-$file = $_GET['file'];
-$hidden = $_GET['hidden'];
-$month = $_GET['month'];
-$range = $_GET['range'];
-$search = $_GET['search'];
-$tel = $_GET['tel'];
-$time = $_GET['time'];
-$url = $_GET['url'];
-$week = $_GET['week'];
+$name = $_POST['name'];
+$password = $_POST['password'];
+$color = $_POST['color'];
+$date = $_POST['date'];
+$dtlocal = $_POST['dtlocal'];
+$email = $_POST['email'];
+$file = $_POST['file'];
+$hidden = $_POST['hidden'];
+$month = $_POST['month'];
+$range = $_POST['range'];
+$search = $_POST['search'];
+$tel = $_POST['tel'];
+$time = $_POST['time'];
+$url = $_POST['url'];
+$week = $_POST['week'];
 
 
 echo "<b>Username adalah = </b>" . $name;
 echo "<br/><b>Password adalah = </b>" . $password;
 
-if (isset($_GET['gender'])) {
+if (isset($_POST['gender'])) {
 
-  $gender = $_GET['gender'];
+  $gender = $_POST['gender'];
   echo "<br><b>Jenis Kelamin = </b>" . $gender;
 }
 
 
-if (isset($_GET['jenis'])) {
-  $jenis = $_GET['jenis'];
+if (isset($_POST['jenis'])) {
+  $jenis = $_POST['jenis'];
   echo "<br>";
   echo "<b>Pilihan Checkbox anda adalah :</b> <br>";
 
