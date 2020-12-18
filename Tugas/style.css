@@ -8,16 +8,13 @@ body {
 .container {
   background-color: white;
   width: 800px;
-  height: 700px;
-  position: absolute;
-  margin-left: 250px;
+  margin: 40px auto;
+  padding: 20px 0px;
 }
 
 .main {
   width: 700px;
-  margin-top: 20px;
-  margin-left: 45px;
-  padding-left: 20px;
+  margin: 20px auto;
   border: 4px solid salmon;
 }
 

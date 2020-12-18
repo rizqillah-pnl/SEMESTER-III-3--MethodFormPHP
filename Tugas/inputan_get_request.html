@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Method POST</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="main">
+      <h1>Belajar Method POST</h1>
+      <br>
+
+      <form action="request.php" method="GET">
+        <table>
+          <tr>
+            <td><label for="name">Username:</label></td>
+            <td><input type="text" id="name" name="name" placeholder="Masukkan Username" autocomplete="off"></td>
+            <td><label for="gender">Jenis Kelamin :</label></td>
+            <td> <input type="radio" id="Laki-laki" name="gender" value="Laki-laki">
+              <label for="male">Laki-laki</label>
+              <input type="radio" id="Perempuan" name="gender" value="Perempuan">
+              <label for="female">Perempuan</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="password">Password :</label></td>
+            <td><input type="password" id="password" name="password" placeholder="Masukkan Password" autocomplete="off">
+            </td>
+            <td><label for="jenis[]">Pilih checkbox :</label></td>
+            <td><input type="checkbox" id="jenis" name="jenis[]" value="Laptop">
+              <label for="jenis">Laptop</label><br>
+              <input type="checkbox" id="jenis2" name="jenis[]" value="PC">
+              <label for="jenis2">PC</label>
+              <input type="checkbox" id="jenis3" name="jenis[]" value="PS5">
+              <label for="jenis3">PS5</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="email">Masukkan email : </label></td>
+            <td><input type="email" id="email" name="email" placeholder="example@urmail.com"></td>
+            <td><label for="color">Pilih Warna </label></td>
+            <td><input type="color" id="color" name="color"></td>
+          </tr>
+
+          <tr>
+            <td><label for="number">Input nomor : </label></td>
+            <td><input type="number" id="number" name="number" placeholder="Number"></td>
+            <td><label for="file">Pilih file anda : </label></td>
+            <td><input type="file" id="file" name="file"></td>
+          </tr>
+
+          <tr>
+            <td><label for="search">Mesin pencarian : </label></td>
+            <td><input type="search" id="search" name="search" placeholder="Cari Disini..."></td>
+            <td><label for="hidden">Klik hidden disamping : </label></td>
+            <td><input type="hidden" id="hidden" name="hidden" value="Selamat Datang"></td>
+          </tr>
+
+          <tr>
+            <td><label for="url">Masukkan link anda : </label></td>
+            <td><input type="url" id="url" name="url" placeholder="Input Link..."></td>
+            <td><label for="image">Klik gambar : </label></td>
+            <td><input type="image" alt="Gambar" src="img.png" id="image" name="image" width="80px" height="80px"></td>
+          </tr>
+
+          <tr>
+            <td><label for="tel">Input nomor telpon anda : </label></td>
+            <td><input type="tel" id="tel" name="tel" placeholder="08xxxx">
+          </tr>
+
+          <tr>
+            <td><label for="week">Masukkan minggu anda : </label></td>
+            <td><input type="week" id="week" name="week"></td>
+          </tr>
+
+          <tr>
+            <td><label for="month">Pilih bulan anda : </label></td>
+            <td><input type="month" id="month" name="month"></td>
+          </tr>
+
+          <tr>
+            <td><label for="date">Pilih tanggal : </label></td>
+            <td><input type="date" id="date" name="date"></td>
+          </tr>
+
+          <tr>
+            <td><label for="dtlocal">Pilih tanggal local : </label></td>
+            <td><input type="datetime-local" id="dtlocal" name="dtlocal"></td>
+          </tr>
+
+          <tr>
+            <td><label for="time">Input jam anda : </label></td>
+            <td><input type="time" id="time" name="time"></td>
+          </tr>
+
+          <tr>
+            <td><label for="range">Select range : </label></td>
+            <td><input type="range" id="range" name="range"></td>
+          </tr>
+
+          <tr>
+            <td colspan="4">
+              <center>
+                <input type="submit" value="Submit" class="submit">
+                <input type="reset" value="Reset" class="reset">
+              </center>
+            </td>
+          </tr>
+
+        </table>
+      </form>
+      <br><br><br><br><br><br>
+    </div>
+  </div>
+
+</body>
+
+</html>
